@@ -1,0 +1,49 @@
+/* ========= articles styling ======== */
+.articles {
+}
+
+.articles-container {
+    article {
+        width: 50%;
+        flex: 0 0 50%;
+        color: $sec-color;
+        @media(max-width: $medium) {
+            width: 100%;
+            flex: 0 0 100%;
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid transparentize($main-color, .75);
+        }
+
+        header {
+            margin-top: .5rem;
+            margin-bottom: 1rem;
+
+            h4 {
+                font-weight: 400;
+                color: $main-color;
+            }
+        }
+
+        p {
+            padding: 1rem 0;
+            color: $sec-color;
+            @media (max-width: $medium) {
+                padding: 0;
+            }
+        }
+
+        .article-img {
+            height: 240px;
+            overflow: hidden;
+            @media (max-width: $medium) {
+                max-height: 200px;
+                img {
+                    margin-top: -10%;
+                }
+            }
+        }
+    }
+}
+
+/* ========= end articles styling ======== */

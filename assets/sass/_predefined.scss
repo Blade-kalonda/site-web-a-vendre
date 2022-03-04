@@ -1,0 +1,317 @@
+/* ==== Predefined styles */
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+html {
+	font-family: sans-serif;
+	line-height: 1.15;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-ms-overflow-style: scrollbar;
+	-webkit-tap-highlight-color: transparent;
+}
+
+body {
+	margin: 0;
+	font-family: $ubuntu, "Arial", sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.5;
+	background-color: $white;
+	color: $font-color;
+	text-align: left;
+}
+
+
+/*===== Title zone =====*/
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0;
+	margin-bottom: 0.5rem;
+}
+
+h1, .h1 {
+    font-size: 2.5em;
+}
+
+h2, .h2 {
+    font-size: 2.3em;
+}
+
+h3, .h3 {
+    font-size: 2em;
+}
+
+h4, .h4 {
+    font-size: 1.6em;
+}
+
+h5, .h5 {
+    font-size: 1.4em;
+}
+
+h6, .h6 {
+    font-size: 1.2em;
+}
+
+.main-title {
+    font-family: $ubuntu, sans-serif;
+    line-height: 1;
+    color: $main-color;
+}
+
+.b-title {
+    font-family: $piazzo, Serif;
+    line-height: 2;
+    color: $main-color;
+}
+
+.main-title, .b-title {
+    font-size: 3em;
+    font-weight: 400;
+    text-align: center;
+    // margin-bottom: 2rem;
+    @media (max-width: $medium) {
+        & {
+            font-size: 2em;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+    }
+
+}
+
+.l4-title {
+    font-family: $piazzo;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: $main-color;
+}
+.post-title {
+    font-family: $ubuntu;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: $sec-color;
+}
+/*===== End title zone =====*/
+
+p {
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+
+a {
+	text-decoration: none;
+    outline: none;
+}
+
+ul {
+	padding: 0;
+}
+
+li, ol, ul, dl {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.fas, .far, .fab, .fa {
+	margin: 0 .25rem;
+	vertical-align: middle;
+}
+
+/*===== Margin and padding zone =====*/
+.py-70 {
+	padding: 70px 0;
+}
+
+.p-120 {
+	padding: 120px;
+}
+
+.pt-120 {
+	padding-top: 120px;
+}
+.pb-120 {
+	padding-bottom: 120px;
+}
+
+.px-15 {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.m-1 {
+	margin: 1rem;
+}
+
+.mx-1 {
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
+.my-1 {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.mb-1 {
+	margin-bottom: 1rem;
+}
+
+.ml-1 {
+	margin-left: 1rem;
+}
+
+.mr-1 {
+	margin-right: 1rem;
+}
+
+/*===== End margin and padding zone =====*/
+
+.container {
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+    @media (min-width: 576px) {
+        max-width: 540px;
+    }
+
+	@media (min-width: $small){
+        max-width: 720px;
+	}
+
+    @media (min-width: $medium) {
+        max-width: 960px;
+    }
+
+    @media (min-width: 1200px) {
+        max-width: 1180px;
+    }
+}
+
+.container-fluid {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+    
+    @media (min-width: 576px) {
+        max-width: 540px;
+    }
+
+	@media (min-width: $small){
+        max-width: 720px;
+	}
+
+    @media (min-width: $medium) {
+        max-width: 960px;
+    }
+
+    @media (min-width: 1200px) {
+        max-width: 1230px;
+    }
+}
+
+.section-header {
+	p {
+		color: $sec-color;
+	}
+
+	@media (max-width: $medium) {
+		& {
+			max-width: 90%;
+			margin-bottom: 2rem;
+            margin-left: auto;
+            margin-right: auto;
+		}
+	}
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.flex {
+	display: flex;
+}
+
+.img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.img-rounded {
+    border-radius: 50%;
+    width: 150px;
+}
+
+
+/*====== Font weight defining ======*/
+.weight300 {
+    font-weight: 300;
+}
+.weight400 {
+    font-weight: 400;
+}
+.weight500 {
+    font-weight: 500;
+}
+.weight600 {
+    font-weight: 600;
+}
+
+/*====== Text positioning ======*/
+.t-center {
+    text-align: center!important;
+}
+.t-left {
+    text-align: left!important;
+}
+.t-right {
+    text-align: right!important;
+}
+
+.form-group {
+	margin-bottom: 1rem;
+}
+
+.form-inline {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+}
+
+.input-group {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.form-control {
+    position: relative;
+    display: block;
+    line-height: 2;
+    height: calc(2.25rem + 2px);
+    outline: none;
+    background-clip: padding-box;
+}
+
+.widget-title {
+    padding: 8px 0;
+    margin-bottom: 30px;
+    background-color: $main-color;
+    color: #fff;
+    font-size: 18px;
+    line-height: 2;
+}
+
+.presentation-color {
+    color: $black;
+}
